@@ -23,7 +23,7 @@
    */
   
   body {
-    margin: 0;
+    margin: 0px;
   }
   
   /**
@@ -360,7 +360,8 @@ body{
     max-width: 1200px;
     font-family: 'Raleway', serif;
     font-size: 14px;
-    font-weight: 500;        
+    font-weight: 500; 
+    margin: auto;       
 }
 
 body h2, h3{
@@ -387,7 +388,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 95%;
-    margin: 2.5%;
+    margin: auto;
 }
 
 h1{
@@ -448,7 +449,7 @@ nav li:hover::before{
 
 #recherche{
     width: 95%;
-    margin: 2.5%;
+    margin: auto;
 }
 
 #recherche h2{
@@ -595,7 +596,7 @@ nav li:hover::before{
     height: auto;
     display: flex;
     width: 95%;
-    margin: 2.5%;
+    margin: auto;
 }
 
 #resultats h2{
@@ -735,7 +736,7 @@ aside img{
 #activites{
     margin-bottom: 50px;
     width: 95%;
-    margin: 2.5%;
+    margin: auto;
 }
 
 #activites h2{
@@ -847,7 +848,9 @@ footer ul{
 
 @media screen and (max-width: 991px){
 
-   
+    body{
+        margin: 0px;
+    }
     header{
         flex-shrink: 0;       
     }
