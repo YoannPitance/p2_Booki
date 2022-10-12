@@ -1,0 +1,1206 @@
+/*normalize.css   ?????????????????
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+  
+
+
+
+/* parametres generaux à la page*/
+
+body{
+    font-family: 'Raleway', serif;
+    font-size: 14px;
+    font-weight: 500;    
+}
+#recherche, #resultats, #activites, footer{
+    padding: 0px 20px;
+}
+
+body h2, h3{
+    font-weight: 800;
+}
+
+header, main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+body, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* parametres de style du header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin: 30px 0px 0px 20px;
+}
+
+h1 img{
+    width: 90px;
+}
+
+/* nav + animations*/
+
+nav{    
+    margin-top: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    font-weight: 600;    
+}
+
+nav a:hover{
+    color: #0065fc;
+}
+
+nav li{    
+    color: #111;
+    position: relative;
+    background: #fff;
+    width: 130px;   
+    display: flex;
+    padding: 0;
+    height: 55px;
+    align-items: end;
+    justify-content: center;
+}
+
+nav li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0065fc;
+    width: 100%;
+    height: 2px;
+    transform: scale(0, 1);
+    transition: transform 0.1s ease;
+}
+
+nav li:hover::before{
+    transform: scale(1, 1);
+}
+
+/* section recherche*/
+
+#recherche h2{
+    font-size: 21px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-weight: 800;
+}   
+
+
+#recherche p{
+    font-size: 15px;
+    margin: 5px 0px 15px 0px;
+}
+
+
+#barre_de_recherche{
+    display: inline-flex;
+    width: 500px;
+    height: 50px;
+    justify-content: flex-start;
+    margin: 10px 0px 20px 0px;
+}
+
+.icone_position{
+    width: 50px;
+    height: 45px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.loupe{
+    display: none;
+}
+
+#barre_de_recherche input{
+    border: none;
+    font-weight: 700;
+    color: #000;
+    padding-left: 10px;    
+    width: 200px;
+    font-size: 17px;
+    height: 45px;
+}
+
+
+#barre_de_recherche input::-webkit-input-placeholder{
+    color: lightgray;
+    font-weight: 500;
+}
+
+#barre_de_recherche button{
+    border: none;
+    background-color: #0065fc;
+    color: #fff;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;    
+    cursor: pointer;  
+    width: 120px; 
+    height: 45px;
+}
+
+/*section filtres de recherche*/
+
+#filtres{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.titre_filtres{
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#filtres a{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #dfdfdf;
+    background-color: #fff;
+    margin-left: 30px;
+    padding-right: 20px;    
+}
+
+.case_filtre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+    margin: 0px 10px 0px -2px;
+    background-color: #deebff;
+}
+
+#filtres a:hover{    
+    background-color: #deebff;
+    border: 3px solid #0065fc;
+}
+
+#filtres p{
+    display: contents;
+    font-weight: 800;
+    font-size: 16px;
+    color: #000;
+    padding-right: 20px;
+}
+
+#filtres svg{
+    color: #0065fc;    
+}
+
+.recherche_info{
+    margin: 10px 0px 30px 0px;
+    display: flex;
+    align-items: baseline;
+}
+
+.recherche_info p{
+    padding-left: 10px;
+}
+
+.icone_i{
+    width: 20px;
+    height: 20px;
+    color: #0065fc;    
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 50%;
+    text-align: center;    
+}
+
+ /*section resultats + hebergements a marseille*/
+
+#resultats{
+    height: auto;
+    display: flex; 
+}
+
+#resultats h2{
+    height: 21px;
+    width: 100%;
+    margin: 40px 0px 0px 30px;
+}
+
+.plus{
+    width: 100%;
+    margin-left: 20px;
+    font-weight: 800;
+    margin: 30px;
+}
+
+
+p.plus{
+    font-size: 16px;    
+}
+
+#vignettes_resultats{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+#vignettes_resultats a{
+    width: 27%;   
+    height: 180px;
+    overflow: hidden;
+    border: 4px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px 15px 0px 15px;
+    box-shadow: 1px 4px 5px 1px #dddddd;
+}
+
+.texte_vignette_resultats{
+    width: 90%;
+    margin: 5px 0px 10px 10px;    
+}
+
+.texte_vignette_resultats p{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+.texte_vignette_resultats h3{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+#vignettes_resultats img{
+    width: 100%;
+    height: 110px;    
+    object-fit: cover;
+}
+
+.notes{
+    display: flex;
+}
+
+.etoile_bleue{
+    color: #0065fc;
+}
+
+.notes svg{
+    font-size: 11px;
+}
+
+.etoile_grise{
+    color: #dfdfdf;
+}
+
+/*section hebergements les plus populaires*/
+
+h2.populaire{
+    display: flex;  
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+aside{
+    width: 30%;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+aside a{
+  /*  min-width: 300px;*/
+    width: 80%;
+    height: 130px;
+    display: flex;
+    overflow: hidden;
+    border: 4px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 30px auto;
+    box-shadow: 1px 4px 5px 1px #dddddd;
+}
+
+aside img{
+    width: 125px; 
+    height: 130px;   
+    object-fit: cover;     
+}
+
+.texte_vignette_aside{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 15px;    
+}
+
+.texte_vignette_aside p{
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.texte_vignette_aside h3{
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+/* section activites a marseille*/
+
+#activites{
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+#activites h2{
+    margin-top: 50px;
+}
+
+#vignettes_activites{
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+    
+}
+
+#vignettes_activites p{
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.grande_vignette{
+    border: 0px solid #fff;
+    border-radius: 20px;
+    box-shadow: 1px 4px 5px 1px #dddddd;
+    overflow: hidden;
+    min-width: 280px;
+    width: 22%;
+    height: 405px;
+}
+
+.moyenne_vignette{
+    border: 0px solid #fff;
+    border-radius: 20px;
+    box-shadow: 1px 4px 5px 1px #dddddd;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 35px;
+    height: 210px;
+}
+
+.petite_vignette{
+    border: 0px solid #fff;
+    border-radius: 20px;
+    box-shadow: 1px 4px 5px 1px #dddddd;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 35px;
+    height: 160px;    
+}
+
+.mini_groupees{
+    display: flex;    
+    flex-direction: column;
+    align-content: space-between;    
+    height: auto;
+}
+
+.petite_vignette img{
+    width: 280px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.moyenne_vignette img{
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.grande_vignette img{
+    width: 280px;
+    height: 355px;
+    object-fit: cover
+}
+
+
+/*footer*/
+
+footer{    
+    height: auto;
+    background-color: #f2f2f2;
+    padding-bottom: 40px;
+    font-size: 15px;    
+}
+
+.infos_footer{
+    max-width: 1200px;
+    display: flex;
+    align-items: baseline;
+    margin: auto;
+}
+
+footer h3{
+    font-size: 16px;
+    margin: 30px 0px 20px 0px;
+}
+
+footer li{
+    list-style-type: none;
+    margin-bottom: 10px;    
+}
+
+footer ul{
+    padding-left: 0px;
+}
+
+.blocs_footer{
+    width: 33%;
+}
+
+/*------------------responsive partie tablette---------------------*/
+
+
+@media screen and (max-width: 991px){
+
+   
+    header{
+        flex-shrink: 0;
+    }
+    
+    #filtres{
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+
+    #filtres a{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #vignettes_resultats{
+        width: 59%;        
+    }
+
+    #vignettes_resultats a{
+        width: 45%;
+        margin: 20px auto;
+    }
+    
+    #resultats{        
+        justify-content: space-between;        
+    }    
+
+    .populaire h2{
+        justify-content: space-between;
+    }
+
+    #vignettes_populaires{
+        display: flex;
+        flex-wrap: wrap;        
+        width: 100%;
+        justify-content: center;
+    }
+    
+    aside{
+        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: 39%;             
+        display: flex;
+        align-self: flex-start;        
+        background-color: #f2f2f2;       
+        padding-bottom: 20px;        
+    }
+
+    aside a{        
+        margin: 20px auto; 
+        width: 85%;             
+    }    
+    
+    #activites{
+        height: 100%;
+        justify-content: space-between;        
+    }
+    
+    #vignettes_activites{
+        display: flex;
+        justify-content: space-between;    
+        flex-wrap: wrap;
+        margin: auto;
+        height: 100%;
+    }
+
+    #activites h2{
+        margin-left: 30px;
+    }    
+       
+    .infos_footer{        
+        padding-left: 30px;        
+    }    
+
+} 
+
+/*---------------------partie mobile-------------------*/
+
+@media screen and (max-width: 767px){
+
+    body{
+        max-width: 767px;
+        margin: 0px;
+        width: -webkit-fill-available;
+    }
+    
+    /*#recherche, #resultats, #activites, footer{
+        margin: auto;
+    }*/
+
+    header {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    h1 img{
+        margin: auto;
+        width: 30%;
+        display: flex;
+        padding-left: 20px;
+        margin-bottom: 20px;        
+    }
+
+/*nav bar*/    
+    
+    nav{
+        display: flex;
+        margin: auto;
+        justify-content: center;        
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+        
+    nav li::before{
+        content: '';
+        position: absolute;
+        background: #f2f2f2;
+        left: auto;
+        top: 50px;        
+        height: 4px;
+        transform: none;
+        transition: none;
+    }
+
+    nav li:hover::before{
+        content: '';
+        position: absolute;
+        background: #0065fc;
+        left: auto;
+        top: 50px;
+        width: 100%;
+        height: 4px;        
+    }    
+
+    nav a:hover{
+        color: #0065fc;
+    }
+
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px;
+    } 
+
+    /* section recherche */
+
+    #recherche h2{               
+        margin-top: 0px;       
+    }      
+    
+    #recherche .p1_recherche{
+        font-size: 16px;        
+    }
+
+    form{
+        width: 100%;
+    }
+    
+    #barre_de_recherche{        
+        width: 100%;
+        justify-content: flex-start; 
+        margin-bottom: 10px;  
+    }    
+           
+    #barre_de_recherche input{
+        border: 1px solid #f2f2f2;        
+        margin-right: 0px; 
+        width: 100%;
+    }
+
+    .texte_bouton_recherche{
+        display: none;
+    }
+
+    .loupe{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-left: -10px;
+    }    
+        
+    #barre_de_recherche button{        
+        border-radius: 15px;
+        width: 45px;       
+    }
+
+
+/* filtres*/
+
+    #filtres{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;             
+    }
+
+    #filtres a{        
+        margin: 5px 10px 10px 0px;             
+    }
+
+    .recherche_info{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;        
+    }
+    
+    #filtres h3, p{        
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    /* hebergements a marseille */
+
+    #resultats{
+        flex-direction: column;
+        width: auto;
+        margin: 0px -20px;
+        justify-content: center; 
+        align-items: center; 
+    } 
+    
+    #vignettes_resultats a{
+        width: 90%;
+        max-width: 500px;        
+        margin: 15px 0px 0px 0px;
+        height: auto;
+              
+    }
+    
+    #vignettes_resultats h2{
+        margin-top: 20px;
+        align-self: flex-start;
+        padding-bottom: 10px;           
+    }
+
+    #resultats h2{
+        margin-left: 20px;
+    }
+    
+    #vignettes_resultats{                    
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        order: 2;            
+        background-color: #fff;
+        width: 100%;
+            
+    }     
+            
+    #vignettes_resultats img{
+        width: 100%;              
+    }
+
+    aside h2.populaire{
+        padding-bottom: 30px;
+    }
+
+    #vignettes_populaires{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;        
+    }
+    
+    aside{
+        order: 1;        
+        padding-bottom: 40px;
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        background-color: #f2f2f2;                    
+    }
+
+    aside a{        
+        width: 90%;
+        max-width: 500px;        
+        margin: 10px 0px 0px 0px;
+        margin-top: 10px;
+    }
+
+    .texte_vignette_aside{
+        margin: 10px 20px 5px 20px;
+        align-self: auto;
+    }
+
+    p.plus{
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+/* activites à marseille*/
+
+    #activites{
+        margin-bottom: 20px;
+        height: auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    #activites h2{
+        margin-top: 20px;
+        margin-left: auto;
+    }
+
+    #vignettes_activites{
+        display: flex;
+        flex-direction: column;
+        height: auto;       
+        flex-wrap: nowrap;
+        max-width: 500px;        
+        align-items: center;
+    }
+
+    .grande_vignette, .moyenne_vignette, .petite_vignette{    
+        width: 100%;
+        height: 190px;
+        margin-bottom: 25px;
+        min-width: auto;
+    }
+
+    .grande_vignette img, .moyenne_vignette img, .petite_vignette img{
+        width: 100%;
+        height: 140px;    
+    }
+
+    .mini_groupees{        
+        width: 100%;
+        align-items: center;
+    }
+
+/*footer*/    
+
+    .infos_footer{    
+        flex-direction: column;
+        align-items: flex-start;    
+        width: 100%;        
+    }
+    
+    .blocs_footer{
+        width: 100%;
+        margin-left: -30px;        
+    }  
+    
+}
+
+
+      
+    
+    
+  
