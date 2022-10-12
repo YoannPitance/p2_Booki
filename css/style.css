@@ -355,13 +355,12 @@
 
 /* parametres generaux à la page*/
 
+
 body{
+    max-width: 1200px;
     font-family: 'Raleway', serif;
     font-size: 14px;
-    font-weight: 500;    
-}
-#recherche, #resultats, #activites, footer{
-    padding: 0px 20px;
+    font-weight: 500;        
 }
 
 body h2, h3{
@@ -369,8 +368,7 @@ body h2, h3{
 }
 
 header, main{
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1300px;
 }
 
 body, ::before, ::after{
@@ -388,6 +386,8 @@ body a{
 header{
     display: flex;
     justify-content: space-between;
+    width: 95%;
+    margin: 2.5%;
 }
 
 h1{
@@ -445,6 +445,12 @@ nav li:hover::before{
 
 /* section recherche*/
 
+
+#recherche{
+    width: 95%;
+    margin: 2.5%;
+}
+
 #recherche h2{
     font-size: 21px;
     margin-bottom: 0;
@@ -461,7 +467,7 @@ nav li:hover::before{
 
 #barre_de_recherche{
     display: inline-flex;
-    width: 500px;
+    width: 100%;
     height: 50px;
     justify-content: flex-start;
     margin: 10px 0px 20px 0px;
@@ -587,7 +593,9 @@ nav li:hover::before{
 
 #resultats{
     height: auto;
-    display: flex; 
+    display: flex;
+    width: 95%;
+    margin: 2.5%;
 }
 
 #resultats h2{
@@ -685,8 +693,7 @@ aside{
     flex-wrap: wrap;
 }
 
-aside a{
-  /*  min-width: 300px;*/
+aside a{  
     width: 80%;
     height: 130px;
     display: flex;
@@ -726,8 +733,9 @@ aside img{
 /* section activites a marseille*/
 
 #activites{
-    height: 100%;
     margin-bottom: 50px;
+    width: 95%;
+    margin: 2.5%;
 }
 
 #activites h2{
@@ -738,7 +746,7 @@ aside img{
     display: flex;
     justify-content: space-between;    
     flex-wrap: wrap;
-    
+    width: 100%;   
 }
 
 #vignettes_activites p{
@@ -750,8 +758,7 @@ aside img{
     border: 0px solid #fff;
     border-radius: 20px;
     box-shadow: 1px 4px 5px 1px #dddddd;
-    overflow: hidden;
-    min-width: 280px;
+    overflow: hidden;    
     width: 22%;
     height: 405px;
 }
@@ -812,10 +819,9 @@ footer{
 }
 
 .infos_footer{
-    max-width: 1200px;
+    margin-left: 2.5%;
     display: flex;
-    align-items: baseline;
-    margin: auto;
+    align-items: baseline;    
 }
 
 footer h3{
@@ -843,7 +849,7 @@ footer ul{
 
    
     header{
-        flex-shrink: 0;
+        flex-shrink: 0;       
     }
     
     #filtres{
@@ -863,11 +869,15 @@ footer ul{
     #vignettes_resultats a{
         width: 45%;
         margin: 20px auto;
-    }
+    }    
     
     #resultats{        
-        justify-content: space-between;        
-    }    
+        justify-content: space-between;          
+    }   
+    #resultats h2{
+        margin-left: 15px;
+        width: 90%;
+    } 
 
     .populaire h2{
         justify-content: space-between;
@@ -897,6 +907,7 @@ footer ul{
     }    
     
     #activites{
+        width: 95%;       
         height: 100%;
         justify-content: space-between;        
     }
@@ -906,18 +917,24 @@ footer ul{
         justify-content: space-between;    
         flex-wrap: wrap;
         margin: auto;
-        height: 100%;
+        height: 100%;      
     }
 
     #activites h2{
-        margin-left: 30px;
-    }    
-       
-    .infos_footer{        
-        padding-left: 30px;        
-    }    
+        margin-left: 0px;
+    }       
+    
+    .infos_footer{         
+        width: 100%; 
+        margin: 0px; 
+        margin-left: 2.5%;      
+    }
+    
+    .blocs_footer{
+        width: 100%;               
+    }  
 
-} 
+}
 
 /*---------------------partie mobile-------------------*/
 
@@ -929,15 +946,16 @@ footer ul{
         width: -webkit-fill-available;
     }
     
-    /*#recherche, #resultats, #activites, footer{
+    #recherche, #resultats, #activites, footer{
         margin: auto;
-    }*/
+    }
 
     header {
         width: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center; 
+        margin: 0px;       
     }
 
     h1 img{
@@ -1002,6 +1020,9 @@ footer ul{
 
     /* section recherche */
 
+    #recherche{
+        width: 90%;
+    }
     #recherche h2{               
         margin-top: 0px;       
     }      
@@ -1070,18 +1091,16 @@ footer ul{
 
     #resultats{
         flex-direction: column;
-        width: auto;
-        margin: 0px -20px;
+        width: 100%;
+        margin: 0px;
         justify-content: center; 
         align-items: center; 
     } 
     
     #vignettes_resultats a{
-        width: 90%;
-        max-width: 500px;        
+        width: 90%;               
         margin: 15px 0px 0px 0px;
-        height: auto;
-              
+        height: auto;              
     }
     
     #vignettes_resultats h2{
@@ -1091,7 +1110,7 @@ footer ul{
     }
 
     #resultats h2{
-        margin-left: 20px;
+        margin-left: 5%;
     }
     
     #vignettes_resultats{                    
@@ -1100,8 +1119,7 @@ footer ul{
         align-items: center;
         order: 2;            
         background-color: #fff;
-        width: 100%;
-            
+        width: 100%;            
     }     
             
     #vignettes_resultats img{
@@ -1112,8 +1130,7 @@ footer ul{
         padding-bottom: 30px;
     }
 
-    #vignettes_populaires{
-        width: 100%;
+    #vignettes_populaires{       
         flex-direction: column;
         align-items: center;        
     }
@@ -1128,8 +1145,7 @@ footer ul{
     }
 
     aside a{        
-        width: 90%;
-        max-width: 500px;        
+        width: 90%;               
         margin: 10px 0px 0px 0px;
         margin-top: 10px;
     }
@@ -1141,7 +1157,8 @@ footer ul{
 
     p.plus{
         align-self: flex-start;
-        margin-left: 20px;
+        margin-left: 5%;
+        width: 90%;
     }
 
 /* activites à marseille*/
@@ -1149,29 +1166,27 @@ footer ul{
     #activites{
         margin-bottom: 20px;
         height: auto;
-        width: 90%;
+        width: 100%;
         align-items: center;
     }
 
     #activites h2{
         margin-top: 20px;
-        margin-left: auto;
+        margin-left: 5%;
     }
 
     #vignettes_activites{
         display: flex;
         flex-direction: column;
         height: auto;       
-        flex-wrap: nowrap;
-        max-width: 500px;        
+        flex-wrap: nowrap;             
         align-items: center;
     }
 
     .grande_vignette, .moyenne_vignette, .petite_vignette{    
-        width: 100%;
+        width: 90%;
         height: 190px;
-        margin-bottom: 25px;
-        min-width: auto;
+        margin-bottom: 25px;        
     }
 
     .grande_vignette img, .moyenne_vignette img, .petite_vignette img{
@@ -1189,12 +1204,13 @@ footer ul{
     .infos_footer{    
         flex-direction: column;
         align-items: flex-start;    
-        width: 100%;        
+        width: 90%; 
+        margin: 0px;       
     }
     
     .blocs_footer{
         width: 100%;
-        margin-left: -30px;        
+        margin-left: 5%;       
     }  
     
 }
