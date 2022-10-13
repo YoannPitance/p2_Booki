@@ -914,6 +914,10 @@ footer ul{
         height: 100%;
         justify-content: space-between;        
     }
+
+    #activites img{
+        width: 100%;
+    }
     
     #vignettes_activites{
         display: flex;
@@ -922,6 +926,15 @@ footer ul{
         margin: auto;
         height: 100%;      
     }
+
+    .grande_vignette{
+        width: 45%;
+    }
+    
+    .mini_groupees{
+        width: 45%;
+    }
+    
 
     #activites h2{
         margin-left: 0px;
