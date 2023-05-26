@@ -1,6 +1,6 @@
 # P2 Booki
 
-## Projet d'apprentissage n°2 du parcours FDévellopeur Web Openclassrooms
+## Projet d'apprentissage n°2 du parcours Dévellopeur Web Openclassrooms
 ### "Transformez une maquette en site web avec html et css"
 
 ### La validation de ce projet nécessitait de respecter les caracteristiques techniques suivantes:
